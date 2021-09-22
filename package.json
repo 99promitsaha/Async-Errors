@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ['Colt Steele Udemy Course'],
+  "keywords": [],
   "author": "Promit Saha",
   "license": "ISC",
   "dependencies": {

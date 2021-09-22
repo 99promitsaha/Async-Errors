@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/header') %> 
     <title>Edit Product</title>
 </head>
 
-<body>
+<body class="d-flex flex-column vh-100">
+    <%- include('../partials/navbar') %> 
+
+    <main class="container mt-5">
+    
     <h1>Edit Product</h1>
     <form action="/products/<%=product._id%>?_method=PUT" method="POST">
         <label for="name">Product Name</label>
@@ -22,6 +27,9 @@
         </select>
         <button>Submit</button>
     </form>
+
+</main>
+<%- include('../partials/footer') %> 
 
     <a href="/products/<%=product._id%>">Cancel</a>
 
